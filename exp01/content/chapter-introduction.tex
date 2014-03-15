@@ -1,21 +1,31 @@
 % !TEX root = ../Clean-Thesis.tex
 %
-\chapter{Introduction}
-\label{sec:intro}
+\chapter{实验}
+\label{sec:Experiment}
 
-\cleanchapterquote{You can’t do better design with a computer, but you can speed up your work enormously.}{Wim Crouwel}{(Graphic designer and typographer)}
+\section{实验原理}
+\label{sec:Experiment:Theory}
 
-\Blindtext[2][2]
+按照经典的理论，原子中的电子既有轨道运动，又有自旋运动。对于单电子院子，电子轨道角动量和自旋角动量合成为电子的总角动量。有电子的总磁矩也满足：
+\begin{equation}
+	\bm{\mu_j}=-g_j\frac{e}{2m_e}\bm{P_j}
+\end{equation}
+式中$\bm{P_j}$为电子总角动量，$e$为电子电荷，$m_e$为电子质量，$g_j$则为朗德因子。其数值满足以下关系:
+\begin{equation}
+	\mu_j=-g_j\frac{e}{2m_e}P_j	
+\end{equation}
+其中：
+$$P_j=\sqrt{j(j+1)}\hbar$$
+朗德因子满足以下式子：
+$$g_j=1+\frac{j(j+1)-l(l+1)+s(s+1)}{2j(j+1)}$$
+对于研究对象DPPH（二苯基——苦基肼基）而言，他的一个氮原子上只有一个未成对电子，所以其g因子应该非常接近于自由电子的g值。
 
-\section{Postcards: My Address}
-\label{sec:intro:address}
+在外加磁场中的磁矩的作用能为$E=-\bm{\mu}\cdot\bm{H}$所以对于电子自旋有其磁量子数只能取两个数值，即$M_z=\pm\frac{1}{2}$所以原来的能级在外加磁场后会劈裂成两个能级，能级差与外界恒磁场成正比：
+\begin{equation}
+	\Delta E=E_a-E_b=g\mu_B H
+\end{equation}
 
-\textbf{Ricardo Langner} \\
-Alfred-Schrapel-Str. 7 \\
-01307 Dresden \\
-Germany
-
-
+如果在单电子原子或者自由基分子所处的稳恒磁场区域加上一个微波场，当一个微波量子的能量正好等于上述的能级差的时候，电子在两个能级之间发生共振跃迁。所以当对磁场强度或者微波频率进行调节可以测量得到样品的g值。在本实验中改变的是磁场的强度。
 \section{Motivation and Problem Statement}
 \label{sec:intro:motivation}
 
