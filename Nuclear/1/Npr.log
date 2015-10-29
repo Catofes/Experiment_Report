@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.10.25)  26 OCT 2015 18:39
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.10.25)  27 OCT 2015 14:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1748,11 +1748,16 @@ LaTeX Warning: No \author given.
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
 (Font)              size <8> substituted on input line 59.
 
-LaTeX Font Info:    Calculating math sizes for size <10.05> on input line 68.
-LaTeX Font Info:    Calculating math sizes for size <9.95> on input line 82.
+LaTeX Font Info:    Calculating math sizes for size <10.05> on input line 66.
+
+Underfull \hbox (badness 10000) in paragraph at lines 66--66
+
+ []
+
+LaTeX Font Info:    Calculating math sizes for size <9.95> on input line 80.
 File: tu1.png Graphic file (type QTm)
 <use  "tu1.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 91--92
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 
  []
 
@@ -1767,74 +1772,49 @@ Overfull \vbox (0.26294pt too high) has occurred while \output is active []
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 104--105
 
  []
 
-[2]
-
-LaTeX Font Warning: Font shape `EU1/SimSun(0)/bx/n' undefined
-(Font)              using `EU1/SimSun(0)/m/n' instead on input line 173.
-
-File: tu1.eps Graphic file (type eps)
-<tu1.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 197--198
+File: fengwei.png Graphic file (type QTm)
+<use  "fengwei.png" > [2]
+Underfull \hbox (badness 10000) in paragraph at lines 166--167
 
  []
 
-File: tu1.eps Graphic file (type eps)
-<tu1.eps>
-Underfull \hbox (badness 10000) in paragraph at lines 205--211
+File: fenbianlv.png Graphic file (type QTm)
+<use  "fenbianlv.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
+File: Pu.png Graphic file (type QTm)
+<use  "Pu.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 184--185
 
-Overfull \hbox (17.32083pt too wide) in paragraph at lines 227--239
- [][] 
+ []
+
+File: PuAl.png Graphic file (type QTm)
+<use  "PuAl.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 192--193
+
  []
 
 [3]
-\g__fontspec_family_SimHei_int=\count168
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font SimHei/BI (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font SimHei/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font SimHei/I (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'SimHei(0)' created for font 'SimHei' with options
-. [Script={CJK}].
-. 
-. This font family consists of the following shapes:
-. 
-. * 'normal' with NFSS spec.:
-. <->"SimHei/OT:script=hani;language=DFLT;"
-. 
-. * 'small caps' with NFSS spec.:
-. 
-. and font adjustment code:
-. 
-.................................................
-Missing character: There is no ∥ in font [lmroman10-regular]:mapping=tex-text!
+File: BD.png Graphic file (type QTm)
+ <use  "BD.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
-Overfull \hbox (29.58122pt too wide) in paragraph at lines 298--306
-\EU1/lmr/m/n/10.53937 04-15]. http:∥www.creader.com/news/200112190019.htm. 
  []
 
+
+LaTeX Warning: Reference `eq:2' on page 4 undefined on input line 235.
+
 [4]
-Missing character: There is no ∥ in font [lmroman8-regular]:mapping=tex-text!
- [5] [6] 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5]
+[6] 
 AED: lastpage setting LastPage
 (./Npr.aux (./yemei1401.aux))
 
@@ -1842,16 +1822,16 @@ LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.47188pt have occurred.
 
 
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 23786 strings out of 493706
- 488734 string characters out of 6150887
- 491304 words of memory out of 5000000
- 26739 multiletter control sequences out of 15000+600000
- 62349 words of font info for 283 fonts, out of 8000000 for 9000
+ 23515 strings out of 493706
+ 475680 string characters out of 6150887
+ 499192 words of memory out of 5000000
+ 26479 multiletter control sequences out of 15000+600000
+ 62269 words of font info for 273 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 59i,13n,74p,10411b,784s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 59i,13n,74p,10411b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Npr.pdf (6 pages).

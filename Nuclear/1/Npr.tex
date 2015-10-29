@@ -61,11 +61,9 @@ tabularx,array,booktabs,caption,multirow,upgreek,mathrsfs,gensymb,color}
 
 \parbox{158mm} {
 \zywu{\bf 摘要:}~~\fs
-摘要中应介绍工作目的、方法、结果和最终结论，
-摘要应为独立的小短文,以第三人称撰写, 避免使用"本文"、"作者"等词汇。中文摘要300字左右。
+该实验使用半导体$\alpha$谱仪测量了$^{136}Pu$衰变的$\alpha$粒子能谱，以及通过测量其通过铝膜后的能谱分布计算得到$\alpha$粒子损失在铝膜中的能量为0.53MeV。 由此计算得到铝膜的厚度为3.18$\mu m$。\\
 
-{\bf 关键词:}~~\fs 半导体$\alpha$谱仪， $\alpha$粒子， $^{241}Am$(2-4个) \\
-{\bf PACS:}~~\song 与主题一致。}
+{\bf 关键词:}~~\fs 半导体$\alpha$谱仪， $\alpha$粒子， $^{241}Pu$源 ， 测量厚度}\\
 \end{center}
 %%%%6.正文
 \vspace{5mm}
@@ -84,6 +82,7 @@ $\alpha$粒子是核物理实验中最常接触的一种粒子，研究其与物
 半导体$\alpha$谱仪一般是有金硅面垒探测器和其后续的电子学电路所组成的。$\alpha$粒子入射入探测器的灵敏区内，与物质作用产生电子、空穴对，在反向电压的作用下被探测器收集，经过后续电路放大得到探测信号。金硅面磊半导体$\alpha$谱仪具有能量分辨率高，线性范围宽，脉冲上升时间快，价格便宜等优势，所以对于$\alpha$粒子而言他是一个良好且常用的探测器。
 
 \section{实验}
+\subsection{实验介绍及原理}
 金硅面垒半导体$\alpha$谱仪是一种优良的测量$\alpha$粒子以及其他带电重离子的装置。其组成结构如图1所示，当带电粒子进入半导体的PN结区域，也就是探测器的灵敏区后，其损失能量产生电子孔穴对。而产生电子孔穴对的能量$\omega$则只与材料有关。所以当入射粒子将能量全部沉积在灵敏体积时，其产生的总电荷量就为$\frac{E}{\omega} e$。 同时通过PN结所加的反向电压进行收集，汇集到两极形成电荷脉冲。
 
 \begin{center}
@@ -107,259 +106,223 @@ $\alpha$粒子是核物理实验中最常接触的一种粒子，研究其与物
 \end{center}
 
 通过使用半导体$\alpha$谱仪，我们可以非常方便的得到$\alpha$粒子的能谱，从而能够对$\alpha$粒子与物质的相互作用进行深一步的研究。$\alpha$粒子一般与物质的核外电子发生相互作用，其与电子碰撞使得原子电离，从而损失能量。又因为$\alpha$粒子的质量远远大于电子的质量，因而每次碰撞所转移给电子的能量有一个最大值，同时粒子的方向基本不发生改变。带电粒子在吸收体内单位长度损失的能量被称作线性阻止本领S。将S除以吸收体单位体积内的原子数N，得到物质的阻止截面$\Sigma_e$。 对于$\alpha$离子的阻止截面，可以得到一个经验公式：
-\begin{equation}
+\begin{equation}\label{eq:e}
 	\Sigma_e=\frac{A_1 EA_2 \{ \frac{A_3}{E/1000}\ln[1+\frac{A_4}{E/1000}+\frac{A_5 E}{E/1000}]\}}{A_1 EA_2+\frac{A_3}{E/1000}\ln[1+\frac{A_4}{E/1000}+\frac{A_5 E}{E/1000}]}
 \end{equation}
 其中$A_1$到$A_5$是与材料有关的常数。
 
 在知道阻止截面和能量的关系，以及$\alpha$粒子穿过物质后所损失的能量，我们就可以很方便的得到物质的厚度，这也就是通过$\alpha$粒子测量物质厚度方法的原理。
+\subsection{实验过程}
 
+\begin{enumerate}
+\item 按照图1连接实验装置，并将输出接入多道分析仪。将$\alpha$源$^{239}Pu$放入真空室，抽真空。
+\item 调节偏压到180V，通过多道观察输出波形，并通过调整线性放大器使峰位在6V左右。
+\item 测量不同偏压下（30V-210V)，输出波形的峰位和分辨率随偏压的变化，选择合适的偏压。
+\item 在该偏压下测量$\alpha$源的能谱。并将铝吸收膜放入真空室中源和探测器之间，测量能谱峰位的变化。
+\item 通过脉冲发生器模拟源并对后续电路进行标定。
+\end{enumerate}
 
 
 \section{实验结果和讨论}
-此部分是实验报告的主体, 应占报告篇幅的一半以上。
+如上述实验过程所述，在准备好实验装置后，调节探测器偏压到180V，通过调整放大器使得$\alpha$的能谱峰位落在了610道处。不同偏压下，探测器探测到的峰位分辨率如下表：
 
-依自己意愿, 实验结果和对结果的分析讨论既可分为两节也可合在一节。
-
-实验结果应尽量以图表的形式给出。 每一个图表都应该是完整的, 即阅读图表时可以不必依赖正文。
-
-对于预料之外的实验结果, 必须首先小心证明其可靠性.读者只有在相信你的实验结果时才愿意花时间看你的分析。
-
-必须用文字归纳整理出正式的实验结果或结论.可信的实验结果是课程报告最重要的内容.作为一个实验物理工作者, 分析解释出错并不丢脸, 实验结果不被采信则是致命的.
-教学实验的结论往往是预先知道的. 所以, 教师更关心的是你的说理过程. 一般说来, 单由课内实验的结果不足以能得到明确的结论. 此时, 你可以引用他人的研究结果来帮助帮助自己的论证, 但必须注明出处。
-
-确实不能得到明确结论时, 可以给出几种可能结论并指出可以再做哪些实验来帮助作进一步的判断。
-
-总之, 分析讨论部分要做到: 论据要valid, 论证要reasonable, 结论要convincing.
-
-
-3.1 公式例子
-
-单行公式:
-\begin{equation}
-f(r,p)=\frac{1}{N}\sum_{i=1}^{\tilde{N}N}\delta(r-r_{\RM{i}})\delta(p-p_{\RM{i}}) ~,%(1)
-\end{equation}
-
-多行公式,每行居中:
-\begin{gather}  %多行公式,每行居中
-\frac{\partial f}{\partial t}+\upsilon \cdot {{\nabla }_{r}}f-{{\nabla }_{r}}U\cdot {{\nabla }_{p}}f=\nonumber\\
- -\frac{1}{(2\uppi )^3}{\RM{d}^3}p'_{2}\RM{d}^{3}p{'}_{2}\RM{d}
- \Omega \frac{\RM{d}\sigma }{\RM{d}\Omega }v_{12}\times \nonumber\\
-\{[f\/f_{2}(1-f'_{1})(1-f'_{2})]~,  %(2)
-\end{gather}
-多行公式,等号对齐:
-\begin{align}  %多行公式,等号对齐
-E_{sym}=&E_{sym}(\rho_0)+\frac{L(\rho_0)}{3}\left(\frac{\rho-\rho_0}{\rho_0}\right)+ \nonumber \\
-& \frac{K_{sym}(\rho_0)}{18}\left(\frac{\rho-\rho_0}{\rho_0}\right)^2~\text{。}
-  %(3)
-\end{align}
-
-3.2 图表要求
-%\song\wuhao
-
-图形要求:  彩色、黑白图形均可。
-
-(1)~~在文稿中按插图出现的先后次序顺序编号，并在正文相应位置处插入图片。
-
-(2)~~本刊为黑白印刷，彩图可在网刊中显示，如
-需要请在图题中注明\,(在线彩图(中文稿)，color online(英文稿))。图中的数据线可用黑色或彩色颜色(深色：红、兰、深绿等)来区别，不要用
-浅色(黄、浅黄、浅粉等)或明暗来区分线条、符号和区域，建议使用不同方式来区别，比如：
-
-1)~~线条：------，-- -- --，……，--$\cdot$--$\cdot$--，---$\bullet$---，---$\circ$---，---$\blacktriangle$---，---$
-\blacksquare$---，---$\square$--- 等；
-
-2)~~符号：$\triangleright$，$\bullet$，$\vartriangle$，$\blacktriangle$，$ \blacktriangledown$，$\blacktriangleleft$，$\blacktriangleright $ 等；
-
-3)~~区域：黑、白、网格等。
-
-(3)~~由于本刊为双栏排版，所以文章中图形通常不超过\,7.5cm\,(最好\,6.6cm\,左
-右，方框净尺寸\,5.5cm)，复杂图形不超过\,15cm。
-
-(4)~~\textbf{图中的字母及数字用\,Times New Roman\,字体，中文用宋体，分辨率为\,600 dpi，字符大小用小\,5(9 Pt)号及\,6\,号\,(7.5 Pt)。}
-
-
-(5)~~\textbf{图的横纵坐标刻度线应标在内侧}，横纵坐标需标明相应的变量
-和单位，使用“变量名称\,/\,单位”形式标记（如: $E$\,/\,keV）。
-
-
-(6)~~{图中出现的物理量名称和符号须与正文一致
-并在正文中有相关说明
-和解释，若是中文稿，图中出现的英文描述内容请改用中文表达\,(非物理量名称)，并
-与文中的说明文字一致。}
-
-
-(7)~~{所有插图需另提供\,1\,份画图软件的源数据文件，比
-如\,Origin\,的\,opj}(word\,文件可直接将\,opj\,插入\,word\,文档中)，{或提供高
-分辨原图，或含图的文献\,pdf\,文件，以备修图制版。所有插图打包压缩
-为一个文件上传或发到邮箱，并注明稿号。}
-
-
-图形具体要求请参看 http://www.npr.ac.cn 。图例如下所示：
-
-单栏图：
-\begin{center}
-\includegraphics{tu1.eps}\\
-\xiaowu\song 图~1\begin{minipage}[t]{75mm} \quad (在线彩图)\,不同种类、能量的离子沉积的电荷量沿径向的变化关系\\[-1mm]\wuhao
-\end{minipage}
-\end{center}
-通栏图：
-\end{multicols}
-
-\begin{center}
-\includegraphics{tu1.eps}\\
-\xiaowu\song  图~2\begin{minipage}[t]{160mm} \quad ImQMD05模型计算的电荷多重数分布与实验数据比较\\
-\footnotesize
-(a)\,入射能量为\,50\,MeV/u，中心碰撞条件
-下\,Xe+Sn\,反应出射产物的电荷分布；(b)\,入射能量为\,35\,MeV/u\,中心碰撞条件下\,Ca+Ca\,反应出射产物的
-电荷分布；(c)\,入射能量为\,60，150\,和\,400\,MeV/u\,时，中心碰撞条件下\,Au+Au\,反应出射产物的
-电荷分布。\\[-3.0mm] \wuhao
-\end{minipage}
-\end{center}
-
-\begin{multicols}{2}
-\song\wuhao
-\end{multicols}
-3.3 表格例子
-表格要求为三线表。例：
 \begin{center}
 \bgliu
 {\bf 表~1\quad
-表题XXXXXXXXXXXXXXX}\\[0.5mm]
+不同偏压下，探测器探测得到$\alpha$能谱的峰位以及分辨率数据表}\\[0.5mm]
 \renewcommand{\arraystretch}{1.5}
 \liuhao\song\rm
-\newcolumntype{M}{>{\centering\arraybackslash}m{100mm} >{\centering\arraybackslash}m{19mm}
->{\centering\arraybackslash}m{10mm} >{\centering\arraybackslash}m{20mm} >{\centering\arraybackslash}m{6mm} }
+\newcolumntype{M}{>{\centering\arraybackslash}m{15mm} >{\centering\arraybackslash}m{15mm}
+>{\centering\arraybackslash}m{15mm}}
 \begin{tabular}{M}
 \specialrule{0.1em}{1pt}{1pt}
 
-1&2&3&4&5\\
+偏压/V	&	峰位/道	&	分辨率/\%	\\
 \midrule
-
-1&2&3&4&5\\
-
-1&2&3&4&5\\
-
-1&2&3&4&5\\
+30	&	417	&	9.3	\\
+45	&	431	&	8.7	\\
+60	&	438	&	8.2	\\
+75	&	454	&	7.3	\\
+90	&	474	&	6.0	\\
+105	&	502	&	5.6	\\
+120	&	529	&	5.0	\\
+135	&	554	&	4.4	\\
+150	&	577	&	4.2	\\
+165	&	594	&	3.9	\\
+180	&	610	&	3.8	\\
+195	&	625	&	3.7	\\
+210	&	637	&	3.6	\\
 \specialrule{0.1em}{3pt}{2pt}\\[-4mm]
 \end{tabular}\\
 \renewcommand{\arraystretch}{1.0}
 \end{center}
+实验中同时观察到$\alpha$能谱从30V偏压下的一个峰位逐渐转变为210V下的两个可分辩的独立的峰位，其中较小的峰位于主峰右侧。具体形状可以参考图5。
 
+做出能谱峰位和分辨率随偏压变化的图如下：
 
-\begin{multicols}{2}
-\section{总结}
-首先要给出实验结果，然后再给出由实验结果分析得到的结果和结论．此部分给出的内容要比摘要中的全面，用词要更准确．
-\section{致谢}
- 感谢对实验和报告有具体重要帮助的，又没被列为作者的人． 
-\section{参考文献}
-参考文献的格式要统一。
-参考文献内容：六号, 中文宋体，西文、数字全部 Times New
-Roman。在文中引用的时候，请使用上标，并用方括号注明，中文参考文献的格式应先给出英文译文,
-并在该文献后用括号注明(in Chinese).
-
-\hei  {1）期 刊:} \song [序号]
-作者姓名(前三名，作者姓前名后，不加缩写点，并且姓全部大写).
-期刊名称(若缩写，不加缩写点)，出版年，卷号(期号): 起始页码.
-
-例子：国外期刊\cite{qikan:1996ff}： [1] COLO G, GIAI N V, MEYER
-J, \emph{et al}.Microscopic determination of the nuclear incompressibility within the nonrelativistic framework[J].Phys Rev C, 2004, \textbf{70}: 024307.\\
-中文期刊\cite{qikancn:2002mu}：[2] LI Qiang, WEI
-Zengquan. Basic Theory of Heavy Ion Beam Used in Tumor Radiotherapy[J]. Nuclear Physics Review, 1999, \textbf{16}(3): 216. (in Chinese)
-
- (李强，卫增泉.重离子径迹结构的Monte Carlo计算模型[J].原子核物理评论，1999，16(4): 261.)\\
-\hei 2）专 著 \song [序号] 作者姓名(前三名).
-书名[M]. 版本(第１版可略). 出版地:出版者，出版年：起--止页码.
-
-\noindent
-[3] DING Dazhao，CHEN Yongshou，ZHANG Huanqiao.~Progress in Nuclear Physics\,[M].
-Shanghai:\,Shanghai Science and Technology Publishing
-House, 1997:299--382. (in Chinese)
-
-\noindent
-(丁大钊，陈永寿，张焕乔. 原子核物理进展\,[M]. 上海:~上海科学技术出版社, 1997： 299-382.) \\
-\hei 3）论文集、会议录 \cite{meet:1993}: \song [序号]
- 作者姓名(前三名).文题名[C]. 出版地(城市): 出版者, 出版年：起止页码.
-
-\noindent
-[4] ROSENTHALL E M. Proceedings of Fifth Canadian Mathematical Congress, University of Montreal,1961[C]. Toronto: University of Toronto Press,1963: 20--50.\\
-\hei 4） 析出文献\cite{meeting:2007pc}：\song [序号]
- 作者姓名(前三名). 析出文献题名//编者（可选）. 原文献题名. 出版地: 出版者, 出版年: 起始页码.\\
-比如从会议论文集中析出的文献:
-
-\noindent
-[5] MATSUMOTO H, KAZACOV S, SAITO K. A New Design for a Super-Conducting Cavity Input Coupler[C]//Horak C ed. Proceedings of the Particle Accelerator Conference. USA: Institute of Electrical and Electronics Engineers, Inc, 2005, 4141--4143.
+\begin{center}
+   \includegraphics[width=0.4\textwidth]{fengwei.png}
 \\
-\hei 5) 学位论文\cite{master:cn}:\song ~[序号]
-作者姓名. 论文题名.
-学位获得所在地名：学位获得单位，出版年(月份)：\ 起-止页码.\\
-\hei 6) 预印本\cite{Yuqinben:pc}(Preprint):\song \;例如：SJOSTRAND T\,, LOONNBLAD L, MRENNA S.
-ArXiv: hep-ph/\linebreak 0108264, 2001.\\
-\hei 7) 电子文献著录格式\cite{netpaper:pc}:\song
-~为便于读者阅读网络参考文献，应详细著录网络文献所在网页的地址。
- 有责任者、篇名的，应著录其责任者、篇名、该网页的地址。至少补充
- 题目、引用日期\,(访问的日期)，及网址等三项(若有作者，最好加上)。
-关于[文献类型标志/文献载体标志]，本刊推荐为[EB/OL]。
+\xiaowu\song 图~3\begin{minipage}[t]{75mm} \quad 探测到的$\alpha$能谱峰位随偏压改变变化图。可以看出偏压越大，峰位也变大并趋于一个稳定的值。\\[-1mm]\wuhao
+\end{minipage}
+\end{center}
+
+\begin{center}
+   \includegraphics[width=0.4\textwidth]{fenbianlv.png}
+\\
+\xiaowu\song 图~4\begin{minipage}[t]{75mm} \quad 探测到的$\alpha$能谱峰分辨率随偏压改变变化图。可以看出偏压越大，分辨率越小并且变化幅度也越来越小。\\[-1mm]\wuhao
+\end{minipage}
+\end{center}
+
+从实验结果可以看出，在我们逐渐增加探测器的反向偏压的时候，探测器探测得到的$\alpha$能谱中峰位也会逐渐变大并趋于一个稳定值，而分辨率也在逐渐变小。对应图谱变化为峰位右移，并且两个峰的区分度变得越来越明显。半导体质谱仪的原理产生了这一现象。半导体的灵敏区厚度和结电容的大小都取决于外加电压，在电压逐渐升高的过程中，灵敏区厚度逐渐变大，从而可以使得$\alpha$沉积的能量变大直至全部被沉积并收集。同时因为探测器的结电容所带来的实际上一个噪声源，随着偏压的升高，结电容逐渐减小，从而改善了探测器的能量分辨率。所以观测得到的现象即为峰位逐渐变大并趋于稳定，而分辨率逐渐变小。但是偏压过高，即可能损坏仪器，同时探测器的漏电流也会增大从而使得分辨率变坏。所以偏压应该选择一个较为合适的范围。在本次测量中，偏压就选择为210V。
+
+选定210V偏压，就可以具体的测量$^{239}Pu$放射源的$\alpha$能谱了。利用多道测量记录得到了图5
+
+\begin{center}
+   \includegraphics[width=0.4\textwidth]{Pu.png}
+\\
+\xiaowu\song 图~5\begin{minipage}[t]{75mm} \quad 探测到的$\alpha$能谱图，探测器偏压为210V\\[-1mm]\wuhao
+\end{minipage}
+\end{center}
+可以看出在210V的偏压下，$\alpha$能谱的两个峰是清晰可分辩的。其中较大的峰所处的道数为637道。同样可以分析加入铝膜后的数据。如图6：
+
+\begin{center}
+   \includegraphics[width=0.4\textwidth]{PuAl.png}
+\\
+\xiaowu\song 图~6\begin{minipage}[t]{75mm} \quad 探测到的经过铝膜损失能量后的$\alpha$能谱图，探测器偏压为210V\\[-1mm]\wuhao
+\end{minipage}
+\end{center}
+可以看出在经过铝膜之后，$\alpha$粒子自身的能量损失，整体等峰位左移。其主峰峰位为566道。这样就可以计算出经过铝膜以后，$\alpha$粒子损失的能量对应的道数为71道。
+
+随后就是通过脉冲发生器对测量仪器进行标定。首先设定脉冲发生器发生脉冲幅度为5.15V，并通过调整脉冲发生器的校准使其峰位与Pu的峰位重合。即642道为Pu的峰位，同时也是脉冲发生器发生5.15V电压对应的峰位。这样就可以利用脉冲发生器自身的线性来标定测量仪器了。
+
+调节脉冲发生器的幅度，得到以下峰位电压关系。
+
+\begin{center}
+\bgliu
+{\bf 表~2\quad
+脉冲发生器产生不同脉冲幅度时探测器得到的道数关系表。}\\[0.5mm]
+\renewcommand{\arraystretch}{1.5}
+\liuhao\song\rm
+\newcolumntype{M}{>{\centering\arraybackslash}m{22.5mm} >{\centering\arraybackslash}m{22.5mm}
+}
+\begin{tabular}{M}
+\specialrule{0.1em}{1pt}{1pt}
+
+脉冲幅度/V	&	道数	\\
+\midrule
+5.0	&	619	\\
+4.5	&	552	\\
+4.0	&	486	\\
+3.5	&	419	\\
+3.0	&	354	\\
+\specialrule{0.1em}{3pt}{2pt}\\[-4mm]
+\end{tabular}\\
+\renewcommand{\arraystretch}{1.0}
+\end{center}
+\begin{center}
+   \includegraphics[width=0.4\textwidth]{BD.png}
+\\
+\xiaowu\song 图~6\begin{minipage}[t]{75mm} \quad 脉冲发生器产生不同脉冲幅度时探测器得到的道数关系图。\\[-1mm]\wuhao
+\end{minipage}
+\end{center}
+通过计算就可以得到道数和脉冲电压的关系为
+\begin{equation}
+	U = 0.0075X + 0.334
+\end{equation}
+其中X为道数。又因为$^{239}Pu$衰变$\alpha$粒子的能量为5.15MeV，这样就将能量和道数之间的关系对应起来，从而可以得到经过铝膜后，$\alpha$粒子损失的能量为0.53MeV。
+
+将铝的常数带入公式\ref{eq:2}就可以得到散射截面，从而可以计算得到铝膜的厚度为3.18$\mu m$。
+
+
+\section{总结和结论}
+在本次实验中，随着探测器偏压的增大，探测器探测得到的$^{239}Pu$的$\alpha$粒子峰位逐渐变大，并且分辨率便高。最后选定210V偏压进行测量。
+
+测量得到的$\alpha$能谱图如图5所示，经过铝膜后的能谱图如图6所示，可以看出经过铝膜后$\alpha$粒子的能量降低，通过标定和计算可以得到降低越0.53MeV。进而通过计算可以得到添加的铝膜的厚度为3.18$\mu m$。
+
+\section{致谢}
+感谢倪老师的细致讲解以及楼建玲老师为实验做出的准备。
+\section{参考文献}
 
 \noindent
-[8] XIAO Yu.\,Information Highway\,[EB/OL].\,[2002-04-15].
-http:∥www.creader.com/news/200112190019.htm.\\
-\hei 8）标准 \song~(包括国际标准、国家标准、规范、法规等)
-[序号]主要责任者(任选). \,标准编号, 标准名称[S].\;出版地\,(可选): 出版者\,(可选), 出版年\,(可选).\\
-示例：\\
+[1] Peking Unviersity, Fudan University \ Nuclear Experment
+\ Nuclear Publishing House, 1989: 17-23. (in Chinese)
+
 \noindent
-[9] GB/T 7714-2005, 文后参考文献著录规则[S].
-
-\vspace*{5mm}
-\linespread{1.5}
-\begin{thebibliography}{90}   %参考文献
-\liuhao\rm\song
-
-%\cite{qikan:1996ff}
-\bibitem{qikan:1996ff} %1
-  COLO G, GIAI N V, MEYER J, \emph{et al}.Microscopic determination of the nuclear incompressibility within the nonrelativistic framework[J]. Phys Rev C, 2004, \textbf{70}: 024307.
-%\cite{qikancn:2002mu}
-\bibitem{qikancn:2002mu} %2
-  LI Qiang, WEI Zengquan.Basic Theory of Heavy Ion Beam Used in Tumor Radiotherapy[J]. Nuclear Physics
-Review, 1999, \textbf{16}(3): 216. (in Chinese)
-
- (李强, 卫增泉. 重离子径迹结构的Monte Carlo计算模型[J]. 原子核物理评论, 1999, \textbf{16}(4): 261.)
-%\cite{book:1968mk}
-\bibitem{book:1968mk} %3
-DING Dazhao, CHEN Yongshou, ZHANG Huanqiao. Progress in Nuclear
-Physics[M].\ Shanghai: Shanghai Science and Technology Publishing
-House, 1997: 299-382. (in Chinese)
-
- (丁大钊, 陈永寿, 张焕乔.\ 原子核物理进展[M].\ 上海:\ 上海科学技术出版社,\ 1997: 299--382.)
-%\cite{meet:1993}
-\bibitem{meet:1993} %4
-  ROSENTHALL E M.~Proceedings of Fifth Canadian Mathematical Congress, University of Montreal,1961[C]. Toronto: University of Toronto Press, 1963:20-50.
-%\cite{meeting:21cn}
-\bibitem{meeting:2007pc} %5
- MATSUMOTO H, KAZACOV S, SAITO K. A New Design for a Super-Conducting Cavity Input Coupler[C]//Horak C ed. Proceedings of the Particle Accelerator Conference. USA: Institute of Electrical and Electronics Engineers, Inc, 2005, 4141-4143.
-%\cite{master:cn}
-\bibitem{master:cn}  %6
- RAO Yinong. Electron Cooling in HIRFL-CSR[D].\ Lanzhou: Institute of Modern Physics, Chinese Academy of Sciences, 1997. (in  Chinese)
-
-(饶亦农.\ HIRFL-CSR电子冷却[D].\ 兰州：中国科学院近代物理研究所, 1997.)
-%\cite{Yuqinben:pc}
-\bibitem{Yuqinben:pc} %7
- SJOSTRAND T, LOONNBLAD L, MRENNA S. ArXiv: hep-ph/0108264, 2001.
-%\cite{netpaper:pc}
-\bibitem{netpaper:pc} %8
- XIAO Yu. Information Highway\,[EB/OL]. [2002-04-15]. \\http:∥www.creader.com/news/200112190019. htm.
-
-\end{thebibliography}
+ (北京大学，复旦大学.\ 原子核实验\ 原子能出版社,\ 1989: 17-23.)
 
 \end{multicols}
 
-%\vspace*{-2mm}  %同页时用
 \newpage
 
 
 \section*{附录：思考题}
 
+14.1 脉冲幅度随偏压增加而增加，并且增加速度逐渐放缓。分辨率随脉冲幅度增加变小，在超过一定值后再增大（本实验中没有观测到）。选择探测器偏压应该在脉冲幅度基本稳定不变时选择分辨率小时的偏压。
 
+14.2 半高宽为0.007V，而幅度为6V，此时分析范围应该约为0-8V，道数应该为2048道左右。此时道宽为0.004V。道数不够或道宽太大时，可以通过偏执放大器将阈值设置为感兴趣范围的下限，放大倍数使得感兴趣区域的上限位于多道的上限，此时就相当于放大感兴趣范围到整个多道范围。
 
+14.3 因为偏压电源影响了电荷放大器，是放大电路的组成部分，关闭偏压就会是的标定不正确。
+
+14.4 如上述实验所说，调整幅度到一个固定值并使用标准校正使得他和$\alpha$源峰值对应以建立脉冲幅度与能量之间的关系，再通过调整脉冲幅度来模拟改变能量从而标定谱仪。
+
+14.5 不放入源，连接探测器和电子学器件，同时利用校准功能外接脉冲发生器模拟产生信号。这样得到的展宽就是电子学噪声以及探测器噪声的展宽
+
+4.1 $\alpha$粒子穿过吸收体之后，本身与吸收体内原子的核外电子碰撞本身就是一个统计过程，所以吸收的能量本身就会有一定的展宽，因而能谱会变宽。
+
+4.2 $\Delta E = [S] \times \Delta x / \sin{\theta}$。 所以能量损失为$1.002\Delta x [S]$以及$1.006\Delta x [S]$
+
+4.3 Am的能量为5485.8keV，$d E = 0.228 \times 19.31 = 4.4 keV$ 所以最后能量为5481.4keV。
+
+4.4 没有测这个膜。。。
+
+4.5 $\alpha$粒子原始的能量为5.15MeV, 铝膜中损失的能量为0.53MeV。取$\delta E = 0.01MeV$，在这个情况下进行叠加，可以得到最后的长度为3.09$\mu m$。
+
+\begin{center}
+\bgliu
+{\bf 表~3\quad
+Al膜厚度计算表。}\\[0.5mm]
+\renewcommand{\arraystretch}{1.5}
+\liuhao\song\rm
+\newcolumntype{M}{>{\centering\arraybackslash}m{18mm} >{\centering\arraybackslash}m{18mm} >{\centering\arraybackslash}m{18mm} >{\centering\arraybackslash}m{18mm}>{\centering\arraybackslash}m{18mm} >{\centering\arraybackslash}m{18mm}
+}
+\begin{tabular}{M}
+\specialrule{0.1em}{1pt}{1pt}
+
+能量/MeV	&	散射截面/$eV\times10^{-15}\times cm^2$	&	行走长度/$\mu m$	&	能量/MeV	&	散射截面	/$eV\times10^{-15}\times cm^2$&	行走长度/$\mu m$	\\
+\midrule
+5.15	&	27.91	&	0.0595	&	4.88	&	28.96	&	0.0573	\\
+5.14	&	27.94	&	0.0594	&	4.87	&	29.00	&	0.0573	\\
+5.13	&	27.98	&	0.0593	&	4.86	&	29.04	&	0.0572	\\
+5.12	&	28.02	&	0.0593	&	4.85	&	29.08	&	0.0571	\\
+5.11	&	28.06	&	0.0592	&	4.84	&	29.12	&	0.0570	\\
+5.10	&	28.09	&	0.0591	&	4.83	&	29.17	&	0.0569	\\
+5.09	&	28.13	&	0.0590	&	4.82	&	29.21	&	0.0569	\\
+5.08	&	28.17	&	0.0589	&	4.81	&	29.25	&	0.0568	\\
+5.07	&	28.21	&	0.0589	&	4.80	&	29.29	&	0.0567	\\
+5.06	&	28.25	&	0.0588	&	4.79	&	29.33	&	0.0566	\\
+5.05	&	28.29	&	0.0587	&	4.78	&	29.37	&	0.0565	\\
+5.04	&	28.32	&	0.0586	&	4.77	&	29.42	&	0.0565	\\
+5.03	&	28.36	&	0.0585	&	4.76	&	29.46	&	0.0564	\\
+5.02	&	28.40	&	0.0585	&	4.75	&	29.50	&	0.0563	\\
+5.01	&	28.44	&	0.0584	&	4.74	&	29.54	&	0.0562	\\
+5.00	&	28.48	&	0.0583	&	4.73	&	29.59	&	0.0561	\\
+4.99	&	28.52	&	0.0582	&	4.72	&	29.63	&	0.0560	\\
+4.98	&	28.56	&	0.0581	&	4.71	&	29.67	&	0.0560	\\
+4.97	&	28.60	&	0.0581	&	4.70	&	29.72	&	0.0559	\\
+4.96	&	28.64	&	0.0580	&	4.69	&	29.76	&	0.0558	\\
+4.95	&	28.68	&	0.0579	&	4.68	&	29.80	&	0.0557	\\
+4.94	&	28.72	&	0.0578	&	4.67	&	29.85	&	0.0556	\\
+4.93	&	28.76	&	0.0577	&	4.66	&	29.89	&	0.0556	\\
+4.92	&	28.80	&	0.0577	&	4.65	&	29.93	&	0.0555	\\
+4.91	&	28.84	&	0.0576	&	4.64	&	29.98	&	0.0554	\\
+4.90	&	28.88	&	0.0575	&	4.63	&	30.02	&	0.0553	\\
+4.89	&	28.92	&	0.0574	&	4.62	&	30.07	&	0.0552	\\
+
+\specialrule{0.1em}{3pt}{2pt}\\[-4mm]
+\end{tabular}\\
+\renewcommand{\arraystretch}{1.0}
+\end{center}
 
 
 \clearpage
