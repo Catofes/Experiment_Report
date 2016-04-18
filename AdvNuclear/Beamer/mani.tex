@@ -1,0 +1,252 @@
+\documentclass[slidestop, compress, red]{beamer}
+\usepackage[fancyhdr,space,fntef,fontset=ubuntu]{ctex}
+\usepackage{flushend,cuted}
+\usepackage{amsfonts}
+\usepackage{refcount}
+\usepackage{textcomp}
+\usepackage{feynmp-auto}
+\usetheme{Copenhagen}
+\usecolortheme{lily}
+
+\begin{document}
+
+
+%%-------------------------------------------------
+    \title{Rosenbluth 公式}
+    \author{马远卓 卢梦 张一镆 孙嘉琪 乔颢}
+    \institute{北京大学物理学院}
+    \date{\today}
+    \frame{
+    	\titlepage
+    }
+%%-------------------------------------------------
+
+\frame{
+	\section{思路}
+	\frametitle{思路}
+	\begin{block}{Rutherford}
+		\begin{equation}
+			|\frac{d\sigma}{d\Omega}|_R = \frac{4Z^2\alpha^2(\hbar c)^2 E'^2}{|qc|^4}
+		\end{equation}
+	\end{block}
+
+	\begin{block}{Mott}
+		\begin{equation}
+			|\frac{d\sigma}{d\Omega}|_{Mott} = |\frac{d\sigma}{d\Omega}|_R(1-\beta\sin^2\frac{\theta}{2})
+		\end{equation}
+	\end{block}
+
+	\begin{block}{Rosenbluth}
+		\begin{equation}
+			\frac{d\sigma}{d\Omega}=|\frac{d\sigma}{d\Omega}|_{Mott}(A \cos^2(\frac{\sigma}{2})-\frac{q^2}{2m}B\sin^2(\frac{\sigma}{2}))
+		\end{equation}
+	\end{block}
+}
+
+\section{经典卢瑟福散射}
+\begin{frame}
+	\frametitle{经典卢瑟福散射}
+	\begin{block}{卢瑟福散射公式}
+		\begin{equation}
+			\frac{d\sigma}{d\Omega}(E, \theta) = \frac{(zZe)^2}{(4\pi\epsilon_0)^4(4E)^2\sin^4\frac{\theta}{2}}
+		\end{equation}
+	\end{block}
+	要求：
+	\begin{enumerate}
+		\item 非相对论电子
+		\item 不考虑核反冲
+		\item 核为点粒子
+		\item 弹性散射 
+	\end{enumerate}
+\end{frame}
+
+\section{莫特截面}
+\begin{frame}
+	\frametitle{莫特截面}
+	\begin{block}{考虑电子自旋}
+		\begin{equation}
+			|\frac{d\sigma}{d\Omega}|^*_{Mott} = |\frac{d\sigma}{d\Omega}|_R(1-\beta^2\sin^2\frac{\theta}{2})
+		\end{equation}
+	\end{block}
+	\begin{block}{考虑核反冲}
+		\begin{equation}
+			|\frac{d\sigma}{d\Omega}|_{Mott} = |\frac{d\sigma}{d\Omega}|^*_{Mott}\frac{E'}{E}
+		\end{equation}
+	\end{block}
+\end{frame}
+
+\section{进一步的改进}
+\subsection{加入核自旋}
+\begin{frame}
+	\frametitle{考虑核自旋，核子仍然视做点粒子}
+	\begin{center}
+	\begin{fmffile}{fmpicture}
+	\begin{fmfgraph*}(140,70)
+		\fmfleft{i1,i2}
+		\fmfright{o1,o2}
+		\fmf{fermion,label=$e^-,,P_1$}{i1,v1}
+		\fmf{fermion,label=$e^-,,P_3$}{v1,i2}
+		\fmf{fermion,label=$p,,P_2$}{o1,v2}
+		\fmf{fermion,label=$p,,P_4$}{v2,o2}
+		\fmf{photon,label=$\gamma,,q$}{v1,v2}
+		\fmfdotn{v}{2}
+	\end{fmfgraph*}
+	\end{fmffile}
+	\end{center}
+	\begin{equation}
+		\frac{d\sigma}{d\Omega} \sim |\mathcal{M}|^2
+	\end{equation}
+	\begin{equation}
+		i\mathcal{M}=[\overline u (P_4)(-ie\gamma^\mu)u(P_2)]\frac{-ig_{\mu\nu}}{(P_1-P_3)^2+i\epsilon}[\overline u(P_3)(-ie\gamma^\nu)u(P_1)]
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+对初态自旋取平均则有：
+\begin{equation}
+	\begin{split}
+	\frac{d\sigma}{d\Omega}\sim<|\mathcal{M}|^2>&=\frac{e^4}{4(P_1-P_3)^4}[4(P^\mu_1P^\nu_3+P^\mu_3P^\nu_1+(m^2-P_1P_3)g^{\mu\nu})]\\
+	&\times[4(P_{2\mu}P_{4\nu}+P_{4\mu}P_{2\nu}+(M^2-P_2P_4)g_{\mu\nu})]\\
+	&\equiv\frac{e^4}{q^4}L^{\mu\nu}_{electron}L_{\mu\nu proton}
+	\end{split}
+\end{equation}
+
+其中m为电子质量，M为质子质量。
+\end{frame}
+
+\begin{frame}
+通过上述式子可以得到
+\begin{block}{核子视作$\frac{1}{2}$自旋点粒子散射截面}
+\begin{equation}
+	|\frac{d\sigma}{d\Omega}|_{\frac{1}{2}Spin}=|\frac{d\sigma}{d\Omega}|_{Mott}(1+2\tau\tan^2\frac{\theta}{2})
+\end{equation}
+\end{block}
+
+然而测量发现核子具有反常磁矩，也就意味着核子不是点粒子，他有着内部结构，需要对散射进行进一步的修正。
+
+\begin{equation}
+	\begin{split}
+	&\mu_p=2.79\mu_N\\
+	&\mu_n=-1.91\mu_N
+	\end{split}
+\end{equation}
+\end{frame}
+
+\section{Rosenbluth}
+\begin{frame}
+\frametitle{考虑核内部结构}
+\begin{alertblock}{对上述推导做修正}
+$$
+L_{\mu\nu proton} \Rightarrow k_{\mu\nu proton}
+$$
+\end{alertblock}
+
+在顶点处相关项有： $q=P_4-P_2, P_2, P_4, g_{\mu\nu}$。令 $p=P_2$，这样的话p，q相互独立。因此构造$k_{\mu\nu}$的项可以选择有
+$$
+g_{\mu\nu}, p_\mu p_\nu, q_\mu q_\nu, p_\mu q_\nu+p_\nu q_\mu, p_\mu q_\nu-p_\nu q_\mu
+$$
+
+因为$L_{\mu\nu proton}$对$\mu, \nu$对称，因而$k_{\mu\nu proton}$在极限近似下也应该如此。
+
+所以可以排除$p_\mu q_\nu-p_\nu q_\mu$反对称项。
+
+
+\end{frame}
+
+\begin{frame}
+	综上， 有
+	\begin{equation}
+		k_{\mu\nu proton}= -k_1g_{\mu\nu} +\frac{k_2}{M^2}p_\mu q_\nu + \frac{k_4}{M^2} q_\mu q_\nu + \frac{k_5}{M^2}(p_\mu q_\nu+p_\nu q_\mu)
+	\end{equation}
+
+	其中 $k_1, k_2, k_4,k_5$为修正因子， 只与$q^2$相关。
+
+	根据 Ward identity 有$q_\mu k^{\mu\nu}{proton} = 0$, 所以可以得到
+	\begin{equation}
+		\begin{split}
+		&k_4=k_2+\frac{k_1}{q^2}M^2 \\
+		&k_5=\frac{k_2}{2}
+		\end{split}
+	\end{equation}
+	进而有
+	\begin{equation}
+	\begin{split}
+	&k_{\mu\nu proton} = k_1(-g_{\mu\nu} + \frac{1}{q^2}q^\mu q^\nu) + \frac{k_2}{M^2}(p_\mu+\frac{q_\mu}{2})(p_\nu+\frac{q_\nu}{2}) \\
+	&L^{\mu\nu}_{electron}=[P_1^\mu P_3^\nu+P_3^\mu P_1^\nu+g^{\nu\mu}(m^2-P_1\cdot P_3)]
+	\end{split}
+	\end{equation}
+\end{frame}
+
+\begin{frame}
+
+\begin{equation}
+	\frac{d\sigma}{d\Omega} \sim L^{\mu\nu}k_{\mu\nu} = k_1\times(\mathbb{A})+\frac{k_2}{M^2}\times(\mathbb{B})
+\end{equation}
+
+同时可以用关系式化简 
+\[
+\begin{split}
+P_1+P_2&=P_3+P_4\\
+P_1-P_3&=P_4-P_2=q\\
+P_1\cdot q &= P_4 \cdot q = \frac{q^2}{2}\\
+P_2\cdot q &= P_3 \cdot q = -\frac{q^2}{2}
+\end{split}
+\]
+化简得到：
+\begin{equation}
+	\begin{split}
+	\mathbb{A} &= 2P_1\cdot P_3 -4m^2\\
+	\mathbb{B} &= 2(P_2\cdot p)(P_3 \cdot p) +\frac{q^2}{2}M^2
+	\end{split}
+\end{equation}
+\end{frame}
+
+\begin{frame}
+
+所以综上有：
+\begin{equation}
+\frac{d\sigma}{d\Omega}\sim 2[k_1((P_1\cdot P_3)-2m^2)+\frac{k_2}{M^2}((P_1\cdot p)(P_3\cdot p))+\frac{q^2M^2}{4}]
+\end{equation}
+
+我们有$P_1,P_2,P_3,P_4$的相关信息
+\begin{enumerate}
+\item P$_1$=(E,0,0,E)
+\item P$_2$=(M,0,0,0)
+\item P$_3$=(E$^{'}$,0,E$^{'}$sin$\theta$,E$^{'}$cos$\theta$)
+\item P$_4$=(E+M-E$^{'}$,0,-E$^{'}$sin$\theta$,E-E$^{'}$cos$\theta$)
+\end{enumerate}
+带入上式可以得到
+\begin{equation}
+<|\mathcal M|^2>=\frac{e^4}{4E_1E_3\sin^4\frac{\theta}{2}}[2k_1\sin^2\frac{\theta}{2}+k_2\cos^2\frac{\theta}{2}]
+\end{equation}
+\end{frame}
+\begin{frame}
+化简就可以得到 Rosenbluth 形式：
+\begin{equation}
+\begin{aligned}
+\frac{d\sigma}{d\Omega}&=(\frac{\alpha}{4ME_1\sin^2\frac{\theta}{2}})^2\frac{E_3}{E_1}[2k_1(q^2)\sin^2\frac{\theta}{2}+k_2(q^2)\cos^2\frac{\theta}{2}]\\
+&=(\frac{\alpha}{4ME_1\sin^2\frac{\theta}{2}})^2\frac{E_3}{E_1}\cos^2\frac{\theta}{2}[k_2(q^2)+2k_1(q^2)\tan^2\frac{\theta}{2}]
+\end{aligned}
+\end{equation}
+通过测量$\frac{d\sigma}{d\Omega}(E,\theta)$可以得到$k_2(q^2)$以及$k_1(q^2)$的具体形式。
+
+
+但是上式并没有很明显的体现出电和磁形状因子。
+\end{frame}
+\begin{frame}
+
+因此最开始构造光子和质子的顶点因子时，直接用代表电形状和磁形状因子的F1和F2来构造
+\begin{equation}
+\begin{split}
+&\bar u(P_4)(-ie\Gamma^\mu)u(P_2)\\
+&\Gamma^\mu=\gamma^\mu F_1(q^2)+\frac{i\sigma^{\mu\nu}q_\nu}{2M}F_2(q^2)
+\end{split}
+\end{equation}
+
+重新推导可以得到rosenbluth公式，也即K1和K2由F1和F2表示出来。
+\begin{equation}
+\frac{d\sigma}{d\Omega}=|\frac{d\sigma}{d\Omega}|_{Mott}\cdot[(F_1^2-\frac{q^2}{4M^2}F_2^2)-\frac{q^2}{2M^2}(F_1+F_2)^2tan^2\frac{\theta}{2}]
+\end{equation}
+\end{frame}
+
+\end{document}

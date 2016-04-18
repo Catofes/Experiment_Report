@@ -1,0 +1,14 @@
+This is MetaPost, version 1.999 (TeX Live 2015/Arch Linux) (kpathsea version 6.2.1)  13 APR 2016 12:02
+**fmpicture
+(/usr/share/texmf-dist/metapost/base/mpost.mp
+(/usr/share/texmf-dist/metapost/base/plain.mp
+Preloading the plain mem file, version 1.005) ) (./fmpicture.mp
+(/usr/share/texmf-dist/metapost/feynmf/feynmp.mp) [1] )
+ 
+Here is how much of MetaPost's memory you used:
+ 414 strings using 6125 characters
+ 1697296 bytes of node memory
+ 924 symbolic tokens
+ 14i,77n,28p,107b,3f stack positions out of 16i,96n,32p,200b,4f
+1 output file written: fmpicture.1
+

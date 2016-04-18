@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{思路}{2}{0}{1}
+\beamer@sectionintoc {2}{经典卢瑟福散射}{3}{0}{2}
+\beamer@sectionintoc {3}{莫特截面}{4}{0}{3}
+\beamer@sectionintoc {4}{进一步的改进}{5}{0}{4}
+\beamer@subsectionintoc {4}{1}{加入核自旋}{5}{0}{4}
+\beamer@sectionintoc {5}{Rosenbluth}{8}{0}{5}

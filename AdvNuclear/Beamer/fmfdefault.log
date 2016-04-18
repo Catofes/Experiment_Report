@@ -1,0 +1,144 @@
+This is METAFONT, Version 2.7182818 (TeX Live 2015/Arch Linux) (preloaded base=mf 2015.11.24)  11 APR 2016 15:19
+**\mode:=ljfour; mag:=1; nonstopmode; input fmfdefault
+(/home/herbertqiao/Work/Experiment_Report/AdvNuclear/Beamer/fmfdefault.mf
+(/usr/share/texmf-dist/metafont/feynmf/feynmf.mf)
+feynmf: warning: dangling vertex `i2' colliding with `v1'.
+feynmf: warning: dangling vertex `o2' colliding with `v2'.
+feynmf: Have you seen the warning messages above?
+        They are usually caused by misspelling a vertex'
+        name and can trigger errors further below!
+        Fix the typos and run LaTeX and Metafont again.
+! angle(0,0) is taken as zero.
+<recently read> ;
+                 
+marrow->...ection(EXPR3)*length((EXPR2))of(EXPR2);
+                                                  z=point(EXPR3)*length((EXP...
+
+arrow->begingroup.marrow((EXPR2),0.5)
+                                     endgroup
+<to be read again> 
+                   )
+draw_plain_arrow->...aw(EXPR2);cfill(arrow(EXPR2))
+                                                  ;endgroup
+<to be read again> 
+                   endgroup
+<to be read again> 
+                   ;
+vdraw_arc->...cantokens("draw_"&(EXPR2))((EXPR4));
+                                                  vdraw_arc_label((EXPR4),(S...
+<for(1)> ...1),(EXPR0)),vlist[(1)]arc[(EXPR0)]lbl)
+                                                  ;vlist[(1)]arc[(EXPR0)]sty...
+<for(1)> ...arc[j]sty:="";endgroup;fi.fi.fi.endfor
+                                                  ; ENDFOR
+vdraw->...]sty:="";endgroup;fi.fi.fi.endfor;endfor
+                                                  .for.i=polygons:vdraw_labe...
+l.17 vdraw
+          ;
+The `angle' between two identical points is undefined.
+I'm zeroing this one. Proceed, with fingers crossed.
+
+! angle(0,0) is taken as zero.
+<recently read> ;
+                 
+marrow->...ection(EXPR3)*length((EXPR2))of(EXPR2);
+                                                  z=point(EXPR3)*length((EXP...
+
+arrow->begingroup.marrow((EXPR2),0.5)
+                                     endgroup
+<to be read again> 
+                   )
+draw_plain_arrow->...aw(EXPR2);cfill(arrow(EXPR2))
+                                                  ;endgroup
+<to be read again> 
+                   endgroup
+<to be read again> 
+                   ;
+vdraw_arc->...cantokens("draw_"&(EXPR2))((EXPR4));
+                                                  vdraw_arc_label((EXPR4),(S...
+<for(1)> ...3),(EXPR0)),vlist[(3)]arc[(EXPR0)]lbl)
+                                                  ;vlist[(3)]arc[(EXPR0)]sty...
+<for(3)> ...arc[j]sty:="";endgroup;fi.fi.fi.endfor
+                                                  ; ENDFOR
+vdraw->...]sty:="";endgroup;fi.fi.fi.endfor;endfor
+                                                  .for.i=polygons:vdraw_labe...
+l.17 vdraw
+          ;
+The `angle' between two identical points is undefined.
+I'm zeroing this one. Proceed, with fingers crossed.
+
+! angle(0,0) is taken as zero.
+<recently read> ;
+                 
+marrow->...ection(EXPR3)*length((EXPR2))of(EXPR2);
+                                                  z=point(EXPR3)*length((EXP...
+
+arrow->begingroup.marrow((EXPR2),0.5)
+                                     endgroup
+<to be read again> 
+                   )
+draw_plain_arrow->...aw(EXPR2);cfill(arrow(EXPR2))
+                                                  ;endgroup
+<to be read again> 
+                   endgroup
+<to be read again> 
+                   ;
+vdraw_arc->...cantokens("draw_"&(EXPR2))((EXPR4));
+                                                  vdraw_arc_label((EXPR4),(S...
+<for(2)> ...5),(EXPR0)),vlist[(5)]arc[(EXPR0)]lbl)
+                                                  ;vlist[(5)]arc[(EXPR0)]sty...
+<for(5)> ...arc[j]sty:="";endgroup;fi.fi.fi.endfor
+                                                  ; ENDFOR
+vdraw->...]sty:="";endgroup;fi.fi.fi.endfor;endfor
+                                                  .for.i=polygons:vdraw_labe...
+l.17 vdraw
+          ;
+The `angle' between two identical points is undefined.
+I'm zeroing this one. Proceed, with fingers crossed.
+
+! angle(0,0) is taken as zero.
+<recently read> ;
+                 
+marrow->...ection(EXPR3)*length((EXPR2))of(EXPR2);
+                                                  z=point(EXPR3)*length((EXP...
+
+arrow->begingroup.marrow((EXPR2),0.5)
+                                     endgroup
+<to be read again> 
+                   )
+draw_plain_arrow->...aw(EXPR2);cfill(arrow(EXPR2))
+                                                  ;endgroup
+<to be read again> 
+                   endgroup
+<to be read again> 
+                   ;
+vdraw_arc->...cantokens("draw_"&(EXPR2))((EXPR4));
+                                                  vdraw_arc_label((EXPR4),(S...
+<for(2)> ...7),(EXPR0)),vlist[(7)]arc[(EXPR0)]lbl)
+                                                  ;vlist[(7)]arc[(EXPR0)]sty...
+<for(7)> ...arc[j]sty:="";endgroup;fi.fi.fi.endfor
+                                                  ; ENDFOR
+vdraw->...]sty:="";endgroup;fi.fi.fi.endfor;endfor
+                                                  .for.i=polygons:vdraw_labe...
+l.17 vdraw
+          ;
+The `angle' between two identical points is undefined.
+I'm zeroing this one. Proceed, with fingers crossed.
+
+[1])
+! Emergency stop.
+<*> ...four; mag:=1; nonstopmode; input fmfdefault
+                                                  
+*** (job aborted, no legal end found)
+
+ 
+Here is how much of METAFONT's memory you used:
+ 608 strings out of 5274
+ 7228 string characters out of 70022
+ 32129 words of memory out of 5000000
+ 1379 symbolic tokens out of 9500
+ 14i,67n,50r,28p,146b stack positions out of 300i,300n,1000r,150p,200000b
+ 
+(You used 2w,2h,1d,1i,0l,0k,0e,0p metric file positions
+  out of 256w,16h,16d,64i,15000l,2500k,256e,60p)
+Font metrics written on fmfdefault.tfm.
+Output written on fmfdefault.600gf (1 character, 1776 bytes).
