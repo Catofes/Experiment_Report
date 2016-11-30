@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.11.24)  26 MAY 2016 14:32
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.11.24)  4 JUN 2016 14:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1647,14 +1647,15 @@ LaTeX Info: Redefining \selectfont on input line 18.
 \openout2 = `yemei1401.aux'.
 
  (./yemei1401.tex)
+LaTeX Font Info:    Calculating math sizes for size <17.2> on input line 49.
 LaTeX Font Info:    Try loading font information for U+rsfs on input line 49.
 
 (/usr/share/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
-(Font)              size <10.95> substituted on input line 49.
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <8.59999> not available
+(Font)              size <9> substituted on input line 49.
 
 LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 (/usr/share/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -1670,6 +1671,10 @@ LaTeX Font Info:    Try loading font information for TS1+lmr on input line 49.
 (/usr/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.53937> not available
+(Font)              size <10.95> substituted on input line 49.
+
 
 LaTeX Warning: No \author given.
 
@@ -1741,10 +1746,12 @@ LaTeX Warning: No \author given.
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
 (Font)              size <8> substituted on input line 59.
 
-LaTeX Font Info:    Calculating math sizes for size <10.05> on input line 66.
-LaTeX Font Info:    Calculating math sizes for size <9.95> on input line 87.
-File: shiyi.png Graphic file (type QTm)
-<use  "shiyi.png" >
+LaTeX Font Info:    Calculating math sizes for size <9.95> on input line 89.
+
+Package multicol Warning: I moved some lines to the next page.
+(multicol)                Footnotes on page 1 might be wrong on input line 94.
+
+
 Overfull \vbox (0.26294pt too high) has occurred while \output is active []
 
 
@@ -1753,29 +1760,61 @@ Overfull \vbox (0.26294pt too high) has occurred while \output is active []
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 119--120
-
- []
-
+Missing character: There is no γ in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no γ in font [lmroman10-regular]:mapping=tex-text!
 File: 1.png Graphic file (type QTm)
-<use  "1.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 141--142
+ <use  "1.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
 
  []
 
 File: 2.png Graphic file (type QTm)
 <use  "2.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 149--150
+Underfull \hbox (badness 10000) in paragraph at lines 123--124
 
  []
 
 File: 3.png Graphic file (type QTm)
-<use  "3.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 157--158
+<use  "3.png" > [2]
+Underfull \hbox (badness 10000) in paragraph at lines 137--138
 
  []
 
-[2] [3] [4] 
+
+Overfull \hbox (3.23961pt too wide) detected at line 144
+[]\OT1/cmr/m/n/9.95 (\OML/cmm/m/it/9.95 RelativeEfficiency\OT1/cmr/m/n/9.95 ) =
+ \OMS/cmsy/m/n/9.95 ^^@\OT1/cmr/m/n/9.95 0\OML/cmm/m/it/9.95 :\OT1/cmr/m/n/9.95
+ 879 \OMS/cmsy/m/n/9.95 ^^B []\OT1/cmr/m/n/9.95 (\OML/cmm/m/it/9.95 Energy\OT1/
+cmr/m/n/9.95 ) + 16\OML/cmm/m/it/9.95 :\OT1/cmr/m/n/9.95 26
+ []
+
+File: 4.png Graphic file (type QTm)
+<use  "4.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 150--151
+
+ []
+
+File: 5.png Graphic file (type QTm)
+<use  "5.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 159--160
+
+ []
+
+File: 6.png Graphic file (type QTm)
+<use  "6.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 170--171
+
+ []
+
+Missing character: There is no （ in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ） in font [lmroman10-regular]:mapping=tex-text!
+File: 7.png Graphic file (type QTm)
+<use  "7.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 183--184
+
+ []
+
+[3] [4] 
 AED: lastpage setting LastPage
 (./Npr.aux (./yemei1401.aux))
 
@@ -1784,12 +1823,12 @@ LaTeX Font Warning: Size substitutions with differences
 
  ) 
 Here is how much of TeX's memory you used:
- 24511 strings out of 493668
- 491444 string characters out of 6150755
- 502376 words of memory out of 5000000
- 27527 multiletter control sequences out of 15000+600000
- 51862 words of font info for 232 fonts, out of 8000000 for 9000
+ 24517 strings out of 493668
+ 491119 string characters out of 6150755
+ 500376 words of memory out of 5000000
+ 27526 multiletter control sequences out of 15000+600000
+ 52060 words of font info for 234 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 61i,12n,77p,10411b,749s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,13n,77p,10411b,762s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Npr.pdf (4 pages).

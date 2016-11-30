@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.11.24)  18 APR 2016 16:55
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Arch Linux) (preloaded format=xelatex 2015.11.24)  20 APR 2016 21:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1747,11 +1747,6 @@ LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.52812> not available
 (Font)              size <8> substituted on input line 59.
 
 LaTeX Font Info:    Calculating math sizes for size <10.05> on input line 66.
-
-Underfull \hbox (badness 10000) in paragraph at lines 66--66
-
- []
-
 LaTeX Font Info:    Calculating math sizes for size <9.95> on input line 81.
 File: yiqi.png Graphic file (type QTm)
 <use  "yiqi.png" >
@@ -1785,24 +1780,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 118--119
 
  []
 
-[2] 
+File: 2.png Graphic file (type QTm)
+<use  "2.png" >
+Underfull \hbox (badness 10000) in paragraph at lines 133--134
+
+ []
+
+[2] [3] 
 AED: lastpage setting LastPage
 (./Npr.aux (./yemei1401.aux))
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 0.47188pt have occurred.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 24504 strings out of 493668
- 489442 string characters out of 6150755
- 509376 words of memory out of 5000000
- 27520 multiletter control sequences out of 15000+600000
+ 24524 strings out of 493668
+ 490376 string characters out of 6150755
+ 493376 words of memory out of 5000000
+ 27539 multiletter control sequences out of 15000+600000
  62229 words of font info for 268 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 61i,11n,77p,10411b,684s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,11n,77p,10411b,701s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Npr.pdf (2 pages).
+Output written on Npr.pdf (3 pages).
